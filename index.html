@@ -10,15 +10,20 @@
   </head>
   <body>
     <div class="mainTile">
-      <form class="tipping" action="index.html" method="post">
-        <select class="" name="dropdown">
+      <form class="" action="index.html" method="post">
+        The Dreaded Figure <br>
+        $ <input type="text" name="Bill Total" value="Enter the total bill amount"><br>
+        Suggested Tip Guide <br>
+        <select class="tipping" name="dropdown">
           <option value="std" selected> How was your service?</option>
-          <option value="great">great - 20%</option>
-          <option value="good">good - 15%</option>
-          <option value="unimpressed">meh - 10%</option>
-          <option value="bad">poor - 5%</option>
-          <option value="terrible">atrocious - no tip for you</option>
-        </select>
+          <option value="0.2">great - 20%</option>
+          <option value="0.15">good - 15%</option>
+          <option value="0.1">meh - 10%</option>
+          <option value="0.05">poor - 5%</option>
+          <option value="0">atrocious - no tip for you</option>
+        </select> <br>
+        Split Among <br>
+        <input type="text" name="Split" value="Enter the number of persons"><br>
       </form>
     </div>
   </body>
