@@ -10,11 +10,12 @@
   </head>
   <body>
     <div class="mainTile">
-      <form class="" action="index.html" method="post">
-        The Dreaded Figure <br>
-        $ <input type="text" name="Bill Total" value="Enter the total bill amount"><br>
-        Suggested Tip Guide <br>
-        <select class="tipping" name="dropdown">
+      <h1>Tip Calculator</h1>
+      <form class="form" action="index.html" method="post">
+        <h2>The Dreaded Figure</h2> <br>
+        <p id="floaty">$</p><input type="text" class="billTotal" placeholder="Enter the total bill amount"><br>
+        <h2>Suggested Tip Guide</h2><br>
+        <select class="tippings" name="dropdown">
           <option value="std" selected> How was your service?</option>
           <option value="0.2">great - 20%</option>
           <option value="0.15">good - 15%</option>
@@ -22,9 +23,12 @@
           <option value="0.05">poor - 5%</option>
           <option value="0">atrocious - no tip for you</option>
         </select> <br>
-        Split Among <br>
-        <input type="text" name="Split" value="Enter the number of persons"><br>
+        <h2>Split Among</h2> <br>
+        <input type="text" class="split" placeholder="Enter the number of persons"><br>
+        <br>
+        <button type="button" class="btn">Complete</button>
       </form>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
