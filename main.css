@@ -59,6 +59,9 @@ p {
   padding-left: 25px;
   margin-bottom: 30px;
 }
+.billTotal:focus, .split:focus, .tippings:focus {
+  border: 2px solid #388E3C;
+}
 .tippings {
   width: 325px;
   height: 50px;
@@ -79,6 +82,4 @@ p {
   line-height: 60px;
   font-size: 24px;
   margin: 0px 163px 40px 163px;
-
-
 }
