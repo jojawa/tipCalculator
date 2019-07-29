@@ -38,6 +38,7 @@ var listener = function (){
 
     btnEl.style.backgroundColor = "#4CAF50";
     btnEl.style.cursor = "pointer";
+    btnEl.textContent = "Calculate";
 }
 
 formEl.addEventListener("keyup",listener);
