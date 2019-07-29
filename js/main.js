@@ -25,19 +25,20 @@ var calc = function(){
   }
   btnEl.style.backgroundColor = "#4b5e49";
   btnEl.textContent = "Calculated";
-  //tip calculation
+
   var tipAmt = (tippings*billTotal/split).toFixed(2);
   var tipDiv = document.createElement("div");
   form.appendChild(tipDiv);
   tipDiv.className = "appended";
   tipDiv.innerHTML =  "Your total: $ " + tipAmt + " " + each;
 
+  btn.style.cursor = "default";
 }
 var listener = function (){
-  if (billTotal != "" && tippings != "std" && split != ""){
-    btnEl.style.backgroundColor = "#4CAF50";
 
-  }
+    btnEl.style.backgroundColor = "#4CAF50";
+    btnEl.style.cursor = "pointer";
 }
-formEl.addEventListener("focus",listener);
+
+formEl.addEventListener("keyup",listener);
 btnEl.addEventListener("click",calc);
