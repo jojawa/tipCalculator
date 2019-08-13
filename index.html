@@ -11,22 +11,29 @@
   <body>
     <div class="mainTile">
       <h1>Tip Calculator</h1>
-      <form id="form" class="form" action="index.html" method="post">
-        <h2>The Dreaded Figure</h2> <br>
-        <p id="floaty">$</p><input type="text" id="billTotal"class="billTotal" placeholder="Enter the total bill amount"><br>
-        <h2>Suggested Tip Guide</h2><br>
-        <select id="tippings" class="tippings" name="dropdown">
-          <option value="std" selected> How was your service?</option>
-          <option value="0.2">great - 20%</option>
-          <option value="0.15">good - 15%</option>
-          <option value="0.1">meh - 10%</option>
-          <option value="0.05">poor - 5%</option>
-          <option value="0">atrocious - no tip for you</option>
-        </select> <br>
-        <h2>Split Among</h2> <br>
-        <input type="text" class="split" id="split" placeholder="Enter the number of persons"><br>
-        <br>
-        <button type="button" class="btn" id="btn">Complete</button>
+      <form id="form" class="form" action="index.html" method="POST">
+        <section class="share">
+          <label for="billTotal">The Dreaded Figure</label> <br>
+          <p id="floaty">$</p>
+          <input type="text" id="billTotal" name="billTotal" placeholder="Enter the total bill amount"><br>
+        </section>
+        <section class="share">
+          <label for="tippings">Suggested Tip Guide</label><br>
+          <select id="tippings" name="tipAmnt">
+            <option value="std" selected> How was your service?</option>
+            <option value="0.2">great - 20%</option>
+            <option value="0.15">good - 15%</option>
+            <option value="0.1">meh - 10%</option>
+            <option value="0.05">poor - 5%</option>
+            <option value="0">atrocious - no tip for you</option>
+          </select> <br>
+        </section>
+        <section class="share">
+          <label for="split">Split Among</label> <br>
+          <input type="number" name="splitNumber" id="split" min="1" placeholder="Choose the number of persons"><br>
+          <br>
+        </section class="btn">
+        <button type="button" id="btn">Complete</button>
       </form>
     </div>
     <script type="text/javascript" src="js/main.js"></script>

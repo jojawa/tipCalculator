@@ -14,8 +14,8 @@ var calc = function(){
     alert("Please select tip amount");
     return;
   }
-  if (isNaN(split) || split == " " || split <= 0){
-    alert("Please enter the number of persons tipping as an integer > 0");
+  if (split == " " || split <= 0){
+    alert("Please select the number of persons tipping");
     return;
   }
   if (split == 1){

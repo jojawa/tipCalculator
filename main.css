@@ -19,7 +19,7 @@ h1 {
   font-weight: 700;
   color: #4A4A4A;
 }
-h2 {
+label {
   font-size: 24px;
   font-weight: 500;
   color: #607D8B;
@@ -48,31 +48,29 @@ p {
   left: 65px;
   top: 195px;
 }
-.mainTile h2,select.tippings,.billTotal, input.split {
-  margin-left: 94px;
+.share label,#tippings,#billTotal,#split {
+  margin: 20px 0px 30px 94px;
 }
-.billTotal, .split {
+#billTotal, #split {
   width: 375px;
   height: 50px;
   border-radius: 10px;
   border: 1px solid #BDBDBD;
   padding-left: 25px;
-  margin-bottom: 30px;
 }
-.billTotal:focus, .split:focus, .tippings:focus {
+#billTotal:focus, #split:focus, #tippings:focus {
   border: 2px solid #388E3C;
 }
-.tippings {
+#tippings {
   width: 325px;
   height: 50px;
   border: 1px solid #bdbdbd;
   background-color: #fff;
-  margin-bottom: 30px;
 }
-.split::placeholder,.billTotal::placeholder {
+#split::placeholder,#billTotal::placeholder {
   color: #BDBDBD;
 }
-.btn {
+#btn {
   background-color: #bcd0bd;
   text-transform: uppercase;
   color: #fff;
