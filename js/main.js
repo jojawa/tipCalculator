@@ -1,7 +1,7 @@
-var btnEl = document.getElementById("btn");
-var formEl = document.getElementById("form");
+let btnEl = document.getElementById("btn");
+let formEl = document.getElementById("form");
 
-var calc = function(){
+const calc = () => {
   var billTotal = document.getElementById("billTotal").value;
   var tippings = document.getElementById("tippings").value;
   var split = document.getElementById("split").value;
@@ -25,6 +25,7 @@ var calc = function(){
   }
   btnEl.style.backgroundColor = "#4b5e49";
   btnEl.textContent = "Calculated";
+  btnEl.removeEventListener("click", calc);
 
   var tipAmt = (tippings*billTotal/split).toFixed(2);
   var tipDiv = document.createElement("div");
@@ -34,8 +35,7 @@ var calc = function(){
 
   btn.style.cursor = "default";
 }
-var listener = function (){
-
+const listener = () => {
     btnEl.style.backgroundColor = "#4CAF50";
     btnEl.style.cursor = "pointer";
     btnEl.textContent = "Calculate";
